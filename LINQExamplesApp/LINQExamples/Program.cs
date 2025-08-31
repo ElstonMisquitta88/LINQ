@@ -96,8 +96,7 @@ public class Program
         //}
         #endregion
 
-        //Aggregations & Element Operators (Questions)
-
+        #region Day 2 – Aggregations & Element Operators
         //(11)Find total salary of all employees
         //var example = employees.Sum(e => e.Salary);
         //Console.WriteLine(example);
@@ -143,8 +142,26 @@ public class Program
         //    Console.WriteLine("Not Found");
         //}
         //else { Console.WriteLine(example); }
+        #endregion
 
 
+
+
+        //Day 3 – Set Operations & Distinct
+
+        //(21) List distinct departments
+        //var example = employees.Select(e => e.Department).Distinct();
+        //foreach (var e in example)
+        //{
+        //    Console.WriteLine(e);
+        //}
+
+        //(22)List unique salaries
+        //var example = employees.Select(e => e.Salary).Distinct();
+        //foreach (var e in example)
+        //{
+        //    Console.WriteLine("Salary : " + e);
+        //}
 
     }
 }
