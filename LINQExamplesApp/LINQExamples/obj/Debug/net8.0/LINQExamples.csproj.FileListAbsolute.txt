@@ -1,0 +1,15 @@
+D:\GitHub\LINQ\LINQExamplesApp\LINQExamples\bin\Debug\net8.0\LINQExamples.exe
+D:\GitHub\LINQ\LINQExamplesApp\LINQExamples\bin\Debug\net8.0\LINQExamples.deps.json
+D:\GitHub\LINQ\LINQExamplesApp\LINQExamples\bin\Debug\net8.0\LINQExamples.runtimeconfig.json
+D:\GitHub\LINQ\LINQExamplesApp\LINQExamples\bin\Debug\net8.0\LINQExamples.dll
+D:\GitHub\LINQ\LINQExamplesApp\LINQExamples\bin\Debug\net8.0\LINQExamples.pdb
+D:\GitHub\LINQ\LINQExamplesApp\LINQExamples\obj\Debug\net8.0\LINQExamples.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\LINQ\LINQExamplesApp\LINQExamples\obj\Debug\net8.0\LINQExamples.AssemblyInfoInputs.cache
+D:\GitHub\LINQ\LINQExamplesApp\LINQExamples\obj\Debug\net8.0\LINQExamples.AssemblyInfo.cs
+D:\GitHub\LINQ\LINQExamplesApp\LINQExamples\obj\Debug\net8.0\LINQExamples.csproj.CoreCompileInputs.cache
+D:\GitHub\LINQ\LINQExamplesApp\LINQExamples\obj\Debug\net8.0\LINQExamples.sourcelink.json
+D:\GitHub\LINQ\LINQExamplesApp\LINQExamples\obj\Debug\net8.0\LINQExamples.dll
+D:\GitHub\LINQ\LINQExamplesApp\LINQExamples\obj\Debug\net8.0\refint\LINQExamples.dll
+D:\GitHub\LINQ\LINQExamplesApp\LINQExamples\obj\Debug\net8.0\LINQExamples.pdb
+D:\GitHub\LINQ\LINQExamplesApp\LINQExamples\obj\Debug\net8.0\LINQExamples.genruntimeconfig.cache
+D:\GitHub\LINQ\LINQExamplesApp\LINQExamples\obj\Debug\net8.0\ref\LINQExamples.dll
