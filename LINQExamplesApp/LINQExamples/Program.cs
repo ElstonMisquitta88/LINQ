@@ -34,9 +34,35 @@ public class Program
         //    Console.WriteLine(e);
         //}
 
+        //(3) Show Name + Salary projection
+        //var example_03 = employees.Select(e => new { e.Name ,e.Salary});
+        //foreach (var empdt in example_03)
+        //{
+        //    Console.WriteLine(empdt.Name +" : "+ empdt.Salary);
+        //}
 
+        //(4) Order employees by Salary
+        //var example_04 = employees.OrderBy(e => e.Salary);
+        ////var example_04 = employees.OrderByDescending(e => e.Salary);
 
+        //foreach (var empdt in example_04)
+        //{
+        //    Console.WriteLine("Name "+empdt.Name + " : " +"Salary "+ empdt.Salary);
+        //}
 
+        //(5) Order employees by Dept then Salary
+        //var example_05 = employees.OrderBy(e => e.Department).ThenBy(e => e.Salary);
+        //foreach (var empdt in example_05)
+        //{
+        //    Console.WriteLine("Name " + empdt.Name + " : " + "Department " + empdt.Department +" :  "+ " Salary " + empdt.Salary);
+        //}
+
+        //(6)Find top 3 highest salaries
+        //var example_06 = employees.OrderByDescending(e => e.Salary).Take(3);
+        //foreach (var empdt in example_06)
+        //{
+        //    Console.WriteLine("Name " + empdt.Name + " : "  + " Salary " + empdt.Salary);
+        //}
 
 
     }
