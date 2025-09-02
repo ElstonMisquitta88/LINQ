@@ -15,7 +15,7 @@ public class Program
         var employees = new List<Employee>
         {
             new Employee { Id = 1, Name = "Alice", Department = "HR", Salary = 45000, Skills = new List<string>{ "Excel", "Recruitment" }},
-            new Employee { Id = 2, Name = "Bob", Department = "IT", Salary = 60000, Skills = new List<string>{ "C#", "SQL", "Azure" }},
+            new Employee { Id = 2, Name = "Bob", Department = "IT", Salary = 40000, Skills = new List<string>{ "C#", "SQL", "Azure" }},
             new Employee { Id = 3, Name = "Charlie", Department = "IT", Salary = 55000, Skills = new List<string>{ "JavaScript", "React" }},
             new Employee { Id = 4, Name = "David", Department = "Finance", Salary = 70000, Skills = new List<string>{ "Accounting", "Excel" }},
             new Employee { Id = 5, Name = "Eva", Department = "Finance", Salary = 50000, Skills = new List<string>{ "Excel", "SAP" }},
@@ -95,7 +95,6 @@ public class Program
         //    Console.WriteLine("Name " + empdt.Name + " : " + empdt.DoubleSalary);
         //}
         #endregion
-
         #region Day 2 – Aggregations & Element Operators
         //(11)Find total salary of all employees
         //var example = employees.Sum(e => e.Salary);
@@ -143,11 +142,7 @@ public class Program
         //}
         //else { Console.WriteLine(example); }
         #endregion
-
-
-
-
-        //Day 3 – Set Operations & Distinct
+        #region Day3Set Operations & Distinct
 
         //(21) List distinct departments
         //var example = employees.Select(e => e.Department).Distinct();
@@ -162,6 +157,81 @@ public class Program
         //{
         //    Console.WriteLine("Salary : " + e);
         //}
+
+        //(23) Union of two department name lists
+        //var depts1 = new[] { "HR", "IT" };
+        //var depts2 = new[] { "Finance", "IT" };
+        //var example = depts1.Union(depts2);
+        //foreach (var e in example)
+        //{
+        //    Console.WriteLine("Dept Name : " + e);
+        //}
+
+        //(24) Intersection of Finance & HR employee names
+        // Intersect returns the common elements present in both collections.
+        //var example = employees.Where(e=>e.Department== "Finance").Select(e=>e.Name)
+        //     .Intersect(employees.Where(e => e.Department == "HR").Select(e => e.Name));
+        //foreach (var e in example)
+        //{
+        //    Console.WriteLine("Emp Name : " + e);
+        //}
+
+        //(25) Employees in IT but not in HR
+        //var example = employees.Where(e => e.Department == "IT").Select(e => e.Name)
+        //   .Except(employees.Where(e => e.Department == "HR").Select(e => e.Name));
+        //foreach (var e in example)
+        //{
+        //    Console.WriteLine("Emp Name : " + e);
+        //}
+
+        //(26)Distinct skills across all employees
+        //SelectMany flattens collections of collections into one single sequence
+        //var result = collection.SelectMany(x => x.SubCollection);
+        //var example = employees.SelectMany(e => e.Skills).Distinct();
+        //foreach (var e in example)
+        //{
+        //    Console.WriteLine("Skill Name : " + e);
+        //}
+
+
+        //(27)Find duplicate salaries
+        //var example = employees
+        //    .GroupBy(e => e.Salary)
+        //    .Where(g => g.Count() > 1)
+        //    .SelectMany(g => g.Select(e => new { Project = e.Department, Salary = e.Salary }));
+
+        //foreach (var emp in example)
+        //{
+        //    Console.WriteLine($"Project: {emp.Project}, Salary: {emp.Salary}");
+        //}
+
+        //(28)Group employees by same salary
+        //var example = employees
+        //    .GroupBy(e => e.Salary)
+        //    .SelectMany(g => g.Select(e => new { Project = e.Department, Salary = e.Salary }));
+        //foreach (var emp in example)
+        //{
+        //    Console.WriteLine($"Project: {emp.Project}, Salary: {emp.Salary}");
+        //}
+
+        #endregion
+
+
+        //Real-World Scenarios (Questions)
+
+        //(61)Find second-highest salary
+        //var example_01 = employees.OrderByDescending(e => e.Salary).Distinct().Skip(1).First();
+        //Console.WriteLine(example_01.Salary);
+
+        //(62) Find nth highest salary (parameterized)
+        //int n = 3;
+        //var example_02 = employees.OrderByDescending(e => e.Salary).Distinct().Skip(n-1).FirstOrDefault();
+        //Console.WriteLine(example_02.Salary);
+
+        //(63)Find employees per department with max salary
+        var example_02 = employees.GroupBy(x=>x.Department).Select(g => g.OrderByDescending(e => e.Salary).First());
+
+
 
     }
 }
